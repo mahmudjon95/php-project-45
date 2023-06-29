@@ -11,5 +11,8 @@
             "email": "mahmudjon.sayfiddinov@gmail.com"
         }
     ],
+    "bin": [
+        "bin/brain-games"
+    ],
     "require": {}
 }
