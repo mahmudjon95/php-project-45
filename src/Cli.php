@@ -1,7 +1,8 @@
 <?php
 /**
  * Cli File Doc Comment
- *
+ * PHP version 8
+ * 
  * @category Cli
  * @package  MyPackage
  * @author   Mahmudjon <mahmudjon.sayfiddinov@gmail.com> 
