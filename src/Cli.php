@@ -1,4 +1,14 @@
 <?php
+/**
+ * Cli File Doc Comment
+ *
+ * @category Cli
+ * @package  MyPackage
+ * @author   Mahmudjon <mahmudjon.sayfiddinov@gmail.com> 
+ * @license  http://www.gnu.org/copyleft/gpl.html GNU General Public License
+ * @link     http://hexlet.io
+ */
+
 namespace Brain\Games\Cli; // function src\Cli.php
 
 use function cli\line;
