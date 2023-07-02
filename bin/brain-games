@@ -12,4 +12,5 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use function Brain\Games\Cli;
+use function Brain\Games\Cli\helloUser;
+helloUser();
