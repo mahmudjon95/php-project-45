@@ -10,11 +10,18 @@
  * @link     http://hexlet.io
  */
 
-namespace Brain\Games\Cli; // function src\Cli.php
-
+namespace Brain\Games\Cli;
 use function cli\line;
 use function cli\prompt;
 
-line('Welcome to the Brain Game!');
-$name = prompt('May I have your name?');
-line("Hello, %s!", $name);
+/**
+ * Processes welcome user
+ * 
+ * @return string
+ */
+function helloUser()
+{
+    line('Welcome to the Brain Game!');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
+}
