@@ -5,6 +5,6 @@ brain-games:
 brain-even:
 	php bin/brain-even
 validate:
-	composer validate
+	composer validate --no-check-publish
 lint:
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
