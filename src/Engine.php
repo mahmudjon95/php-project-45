@@ -32,7 +32,7 @@ function startGame($gameAbout, $gameDate)
     foreach ($gameDate as [$question, $correctAnswer]) {
         $answer = prompt("Question: ", $question);
         if ($correctAnswer != $answer) {
-            line("'yes' is wrong answer ;(. Correct answer was 'no'.");
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
             line("Let's try again, {$name}!");
             break;
             exit;
