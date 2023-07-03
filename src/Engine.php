@@ -24,19 +24,24 @@ const GAMES_COUNT = 3;
  */
 function startGame($gameAbout, $gameDate)
 {
+    $correctAnswers = 0;
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     line($gameAbout);
     foreach ($gameDate as [$question, $correctAnswer]) {
         $answer = prompt("Question: ", $question);
-        if ($correctAnswer === $answer) {
-            line("Correct!");
-        } else {
+        if ($correctAnswer != $answer) {
             line("'yes' is wrong answer ;(. Correct answer was 'no'.");
             line("Let's try again, {$name}!");
             break;
+            exit;
+        } else {
+            line("Correct!");
+            $correctAnswers++;
         }
     }
-    line("Congratulations, {$name}");
+    if ($correctAnswers === GAMES_COUNT) {
+        line("Congratulations, {$name}");
+    }
 }

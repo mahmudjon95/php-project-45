@@ -27,22 +27,7 @@ function isEven($num)
     $result = ($num % 2) === 0 ? true : false;
     return $result;
 }
-/**
- * Is correct answer
- * 
- * @param boolean $answer     is even number or not even
- * @param int     $randNumber is random nubmer
- * 
- * @return boolean
- */
-function isCorrectAnswer($answer, $randNumber)
-{
-    if (($answer === 'yes' && isEven($randNumber)) || ($answer === 'no' && !isEven($randNumber))) {
-        return true;
-    } else {
-        return false;
-    }
-}
+
 /**
  * Is start game
  * 
@@ -50,13 +35,12 @@ function isCorrectAnswer($answer, $randNumber)
  */
 function evenStart()
 {
-    $gameDate = [];
-    for ($i=0; $i <= GAMES_COUNT; $i++) {
+    $gameData = [];
+    for ($i=0; $i < GAMES_COUNT; $i++) {
         $randNumber = rand(1, 30);
         $correctAnswer = isEven($randNumber) ? 'yes' : 'no';
         $question = $randNumber;
         $gameData[] = [$randNumber, $correctAnswer];
     }
-    
-}
     startGame(GAME_ABOUT, $gameData);
+}
