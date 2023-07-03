@@ -10,38 +10,53 @@
  * @link     http://hexlet.io
  */
 
-namespace Brain\Games\Even;
-use function cli\line;
-use function cli\prompt;
+namespace Src\Games\Even;
+use function Src\Engine\startGame;
+use const Src\Engine\GAMES_COUNT;
 
+const GAME_ABOUT = 'Answer "yes" if the number is even, otherwise answer "no".';
 /**
- * Processes Even game
+ * Is even
+ * 
+ * @param int $num is even number or not even
+ * 
+ * @return boolean
+ */
+function isEven($num)
+{
+    $result = ($num % 2) === 0 ? true : false;
+    return $result;
+}
+/**
+ * Is correct answer
+ * 
+ * @param boolean $answer     is even number or not even
+ * @param int     $randNumber is random nubmer
+ * 
+ * @return boolean
+ */
+function isCorrectAnswer($answer, $randNumber)
+{
+    if (($answer === 'yes' && isEven($randNumber)) || ($answer === 'no' && !isEven($randNumber))) {
+        return true;
+    } else {
+        return false;
+    }
+}
+/**
+ * Is start game
  * 
  * @return boolean
  */
 function evenStart()
 {
-    line('Welcome to the Brain Game!');
-    $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
-    $limitTrueAnswers = 3;
-    $trueAnswers = 0;
-    line('Answer "yes" if the number is even, otherwise answer "no".');
-    for ($limitTrueAnswers; $trueAnswers <= $limitTrueAnswers; $trueAnswers++) {
-        if ($trueAnswers == $limitTrueAnswers) {
-            line("Congratulations, {$name}");
-            break;
-        }
-        $randNumber = rand();
-        $result = (($randNumber % 2 ) == 0) ? 'yes' : 'no';
-        $answer = prompt("Question: ", $randNumber);
-        if ($result == $answer) {
-            line("Correct!");
-        } else {
-            line("'yes' is wrong answer ;(. Correct answer was 'no'.");
-            line("Let's try again, {$name}!");
-            break;
-        }
+    $gameDate = [];
+    for ($i=0; $i <= GAMES_COUNT; $i++) {
+        $randNumber = rand(1, 30);
+        $correctAnswer = isEven($randNumber) ? 'yes' : 'no';
+        $question = $randNumber;
+        $gameData[] = [$randNumber, $correctAnswer];
     }
     
 }
+    startGame(GAME_ABOUT, $gameData);
