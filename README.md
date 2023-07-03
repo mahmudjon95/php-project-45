@@ -6,3 +6,5 @@
 [![asciicast](https://asciinema.org/a/c8olHVNgOGdEVXOvOXUY5rwXR.svg)](https://asciinema.org/a/c8olHVNgOGdEVXOvOXUY5rwXR)
 ### Asciinema demonetization Brain-calc:
 [![asciicast](https://asciinema.org/a/vGfEx9K5ds8PXhij6UqsYYQTl.svg)](https://asciinema.org/a/vGfEx9K5ds8PXhij6UqsYYQTl)
+### Asciinema demonetization Brain-prime:
+[![asciicast](https://asciinema.org/a/OfVm64aC1RMbpMe5D4E6Kjit3.svg)](https://asciinema.org/a/OfVm64aC1RMbpMe5D4E6Kjit3)
