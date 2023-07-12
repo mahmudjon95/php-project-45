@@ -5,7 +5,7 @@
  * PHP version 8
  *
  * @category Engine
- * @package  MyPackage
+ * @package  BrainGames
  * @author   Mahmudjon <mahmudjon.sayfiddinov@gmail.com>
  * @license  http://www.gnu.org/copyleft/gpl.html GNU General Public License
  * @link     http://hexlet.io
@@ -23,7 +23,7 @@ const GAMES_COUNT = 3;
  * @param string $gameAbout is description game
  * @param array  $gameDate  is result game
  *
- * @return void
+ * @return NULL
  */
 function startGame($gameAbout, $gameDate)
 {

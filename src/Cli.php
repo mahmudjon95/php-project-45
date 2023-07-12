@@ -5,7 +5,7 @@
  * PHP version 8
  *
  * @category Cli
- * @package  MyPackage
+ * @package  BrainGames
  * @author   Mahmudjon <mahmudjon.sayfiddinov@gmail.com>
  * @license  http://www.gnu.org/copyleft/gpl.html GNU General Public License
  * @link     http://hexlet.io

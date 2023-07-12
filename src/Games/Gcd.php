@@ -5,7 +5,7 @@
  * PHP version 8
  *
  * @category Gcd
- * @package  MyPackage
+ * @package  BrainGames
  * @author   Mahmudjon <mahmudjon.sayfiddinov@gmail.com>
  * @license  http://www.gnu.org/copyleft/gpl.html GNU General Public License
  * @link     http://hexlet.io
@@ -50,7 +50,7 @@ function getGcd($a, $b)
 /**
  * Is start game
  *
- * @return boolean
+ * @return NULL
  */
 function gcdStart()
 {

@@ -5,7 +5,7 @@
  * PHP version 8
  *
  * @category Prime
- * @package  MyPackage
+ * @package  BrainGames
  * @author   Mahmudjon <mahmudjon.sayfiddinov@gmail.com>
  * @license  http://www.gnu.org/copyleft/gpl.html GNU General Public License
  * @link     http://hexlet.io
@@ -23,7 +23,7 @@ const GAME_ABOUT = 'Answer "yes" if given number is prime. Otherwise answer "no"
  *
  * @param int $num is prime or not prime number
  *
- * @return number
+ * @return bolean
  */
 function isPrime($num)
 {
@@ -41,7 +41,7 @@ function isPrime($num)
 /**
  * Is start game
  *
- * @return boolean
+ * @return NULL
  */
 function primeStart()
 {

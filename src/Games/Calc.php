@@ -5,7 +5,7 @@
  * PHP version 8
  *
  * @category Calc
- * @package  MyPackage
+ * @package  BrainGames
  * @author   Mahmudjon <mahmudjon.sayfiddinov@gmail.com>
  * @license  http://www.gnu.org/copyleft/gpl.html GNU General Public License
  * @link     http://hexlet.io
@@ -25,9 +25,9 @@ const GAME_ABOUT = 'What is the result of the expression?';
  * @param int    $a      first number
  * @param int    $b      second numer
  *
- * @return number
+ * @return string
  */
-function matemExpression($symbol, $a, $b)
+function calculate($symbol, $a, $b)
 {
     switch ($symbol) {
         case "*":
@@ -46,7 +46,7 @@ function matemExpression($symbol, $a, $b)
 /**
  * Is start game
  *
- * @return boolean
+ * @return NULL
  */
 function calcStart()
 {
@@ -56,7 +56,7 @@ function calcStart()
         $randSymb = $matemSymbols[array_rand($matemSymbols, 1)];
         $firstRandNum = rand(1, 30);
         $secondRandNum = rand(1, 30);
-        $correctAnswer = matemExpression($randSymb, $firstRandNum, $secondRandNum);
+        $correctAnswer = calculate($randSymb, $firstRandNum, $secondRandNum);
         $question = $firstRandNum . " {$randSymb} " . $secondRandNum;
         $gameData[] = [$question, $correctAnswer];
     }

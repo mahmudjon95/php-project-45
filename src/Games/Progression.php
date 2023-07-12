@@ -5,7 +5,7 @@
  * PHP version 8
  *
  * @category Progression
- * @package  MyPackage
+ * @package  BrainGames
  * @author   Mahmudjon <mahmudjon.sayfiddinov@gmail.com>
  * @license  http://www.gnu.org/copyleft/gpl.html GNU General Public License
  * @link     http://hexlet.io
@@ -21,7 +21,7 @@ const GAME_ABOUT = 'What number is missing in the progression?';
 /**
  * Is even
  *
- * @return number
+ * @return array
  */
 function randProgression()
 {
@@ -36,7 +36,7 @@ function randProgression()
 /**
  * Is start game
  *
- * @return boolean
+ * @return NULL
  */
 function progrStart()
 {
