@@ -41,8 +41,8 @@ function evenStart()
     for ($i = 0; $i < GAMES_COUNT; $i++) {
         $randNumber = rand(1, 30);
         $correctAnswer = isEven($randNumber) ? 'yes' : 'no';
-        $question = $randNumber;
-        $gameData[] = [$randNumber, $correctAnswer];
+        $question = (int) $randNumber;
+        $gameData[] = [$question, $correctAnswer];
     }
     startGame(GAME_ABOUT, $gameData);
 }
