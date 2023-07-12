@@ -19,7 +19,7 @@ use function cli\prompt;
 /**
  * Processes welcome user
  *
- * @return string
+ * @return NULL
  */
 function helloUser()
 {
