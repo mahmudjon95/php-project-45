@@ -1,25 +1,28 @@
 <?php
+
 /**
  * Engine File Doc Comment
  * PHP version 8
- * 
+ *
  * @category Engine
  * @package  MyPackage
- * @author   Mahmudjon <mahmudjon.sayfiddinov@gmail.com> 
+ * @author   Mahmudjon <mahmudjon.sayfiddinov@gmail.com>
  * @license  http://www.gnu.org/copyleft/gpl.html GNU General Public License
  * @link     http://hexlet.io
  */
 
 namespace Src\Engine;
+
 use function cli\line;
 use function cli\prompt;
+
 const GAMES_COUNT = 3;
 /**
  * Processes welcome user
- * 
+ *
  * @param string $gameAbout is description game
  * @param array  $gameDate  is result game
- * 
+ *
  * @return void
  */
 function startGame($gameAbout, $gameDate)

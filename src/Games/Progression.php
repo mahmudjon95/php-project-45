@@ -1,23 +1,26 @@
 <?php
+
 /**
  * Progression File Doc Comment
  * PHP version 8
- * 
+ *
  * @category Progression
  * @package  MyPackage
- * @author   Mahmudjon <mahmudjon.sayfiddinov@gmail.com> 
+ * @author   Mahmudjon <mahmudjon.sayfiddinov@gmail.com>
  * @license  http://www.gnu.org/copyleft/gpl.html GNU General Public License
  * @link     http://hexlet.io
  */
 
 namespace Src\Games\Progression;
+
 use function Src\Engine\startGame;
+
 use const Src\Engine\GAMES_COUNT;
 
 const GAME_ABOUT = 'What number is missing in the progression?';
 /**
  * Is even
- * 
+ *
  * @return number
  */
 function randProgression()
@@ -32,13 +35,13 @@ function randProgression()
 
 /**
  * Is start game
- * 
+ *
  * @return boolean
  */
 function progrStart()
 {
     $gameData = [];
-    for ($i=0; $i < GAMES_COUNT; $i++) {
+    for ($i = 0; $i < GAMES_COUNT; $i++) {
         $randArray = randProgression();
         $randItem = array_rand($randArray);
         $questionArray = $randArray;
