@@ -32,7 +32,7 @@ function startGame($gameAbout, $gameDate)
     line("Hello, %s!", $name);
     line($gameAbout);
     foreach ($gameDate as [$question, $correctAnswer]) {
-        (int) $answer = prompt("Question: ", $question);
+        $answer = prompt("Question: ", $question);
         if ($correctAnswer != $answer) {
             line("'" .$answer. "' is wrong answer ;(. Correct answer was '" .$correctAnswer. "'.");
             line("Let's try again, " .$name. "!");
