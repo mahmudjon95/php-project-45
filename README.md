@@ -2,6 +2,27 @@
 [![Actions Status](https://github.com/mahmudjon95/php-project-45/workflows/hexlet-check/badge.svg)](https://github.com/mahmudjon95/php-project-45/actions)
 ### Codeclimate check status:
 [![Maintainability](https://api.codeclimate.com/v1/badges/9911fc3354c9ef811953/maintainability)](https://codeclimate.com/github/mahmudjon95/php-project-45/maintainability)
+
+This is a console project for the game "Brian Games". There are 5 mini games inside the project.
+
+Installation requirements:
+php7+
+composer
+git
+
+Installation instructions:
+1. Clone the repository to yourself.
+2. Run the make install command
+
+To start the game from the terminal, use the command:
+make brain games
+make brain-even
+make brain-calc
+make brain-gcd
+make brain progression
+make brain-prime
+
+
 ### Asciinema demonetization:
 [![asciicast](https://asciinema.org/a/c8olHVNgOGdEVXOvOXUY5rwXR.svg)](https://asciinema.org/a/c8olHVNgOGdEVXOvOXUY5rwXR)
 ### Asciinema demonetization Brain-calc:
