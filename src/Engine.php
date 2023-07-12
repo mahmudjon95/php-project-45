@@ -38,7 +38,6 @@ function startGame($gameAbout, $gameDate)
             line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
             line("Let's try again, {$name}!");
             break;
-            exit;
         } else {
             line("Correct!");
             $correctAnswers++;
