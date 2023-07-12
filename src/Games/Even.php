@@ -27,8 +27,7 @@ const GAME_ABOUT = 'Answer "yes" if the number is even, otherwise answer "no".';
  */
 function isEven($num)
 {
-    $result = ($num % 2) === 0 ? true : false;
-    return $result;
+    return $num % 2 === 0;
 }
 
 /**
