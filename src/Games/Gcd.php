@@ -11,11 +11,11 @@
  * @link     http://hexlet.io
  */
 
-namespace Src\Games\Gcd;
+namespace BrainGames\Games\Gcd;
 
-use function Src\Engine\startGame;
+use function BrainGames\Engine\startGame;
 
-use const Src\Engine\GAMES_COUNT;
+use const BrainGames\Engine\GAMES_COUNT;
 
 const GAME_ABOUT = 'Find the greatest common divisor of given numbers.';
 /**

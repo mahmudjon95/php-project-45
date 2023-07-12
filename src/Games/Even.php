@@ -11,11 +11,11 @@
  * @link     http://hexlet.io
  */
 
-namespace Src\Games\Even;
+namespace BrainGames\Games\Even;
 
-use function Src\Engine\startGame;
+use function BrainGames\Engine\startGame;
 
-use const Src\Engine\GAMES_COUNT;
+use const BrainGames\Engine\GAMES_COUNT;
 
 const GAME_ABOUT = 'Answer "yes" if the number is even, otherwise answer "no".';
 /**

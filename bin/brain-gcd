@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-use function BrainGames\Gcd\gcdStart;
+use function BrainGames\Games\Gcd\gcdStart;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 

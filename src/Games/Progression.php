@@ -11,11 +11,11 @@
  * @link     http://hexlet.io
  */
 
-namespace Src\Games\Progression;
+namespace BrainGames\Games\Progression;
 
-use function Src\Engine\startGame;
+use function BrainGames\Engine\startGame;
 
-use const Src\Engine\GAMES_COUNT;
+use const BrainGames\Engine\GAMES_COUNT;
 
 const GAME_ABOUT = 'What number is missing in the progression?';
 /**
