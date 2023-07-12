@@ -27,7 +27,7 @@ const GAMES_COUNT = 3;
  */
 function startGame($gameAbout, $gameDate)
 {
-    line('Welcome to the Brain Game!');
+    line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     line($gameAbout);
