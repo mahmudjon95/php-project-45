@@ -31,20 +31,14 @@ const GAME_ABOUT = 'Find the greatest common divisor of given numbers.';
  */
 function getGcd($a, $b)
 {
-    if ($a % $b === 0) {
-        return $b;
-    } elseif ($b % $a === 0) {
-        return $a;
-    } else {
-        while ($a != $b) {
-            if ($a > $b) {
-                $a = $a - $b;
-            } else {
-                $b = $b - $a;
-            }
+    while ($a != $b) {
+        if ($a > $b) {
+            $a = $a - $b;
+        } else {
+            $b = $b - $a;
         }
-        return $a;
     }
+        return $a;
 }
 
 /**
