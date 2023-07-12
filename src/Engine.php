@@ -27,7 +27,6 @@ const GAMES_COUNT = 3;
  */
 function startGame($gameAbout, $gameDate)
 {
-    $correctAnswers = 0;
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
@@ -37,13 +36,10 @@ function startGame($gameAbout, $gameDate)
         if ($correctAnswer != $answer) {
             line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
             line("Let's try again, {$name}!");
-            break;
+            return;
         } else {
             line("Correct!");
-            $correctAnswers++;
         }
     }
-    if ($correctAnswers === GAMES_COUNT) {
         line("Congratulations, {$name}");
-    }
 }
