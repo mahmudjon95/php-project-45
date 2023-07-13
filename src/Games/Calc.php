@@ -39,6 +39,8 @@ function calculate($symbol, $a, $b)
         case "-":
             $result = $a - $b;
             break;
+        default:
+            $result = false;
     }
     return $result;
 }
