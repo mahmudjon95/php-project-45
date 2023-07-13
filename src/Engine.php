@@ -41,5 +41,5 @@ function startGame($gameAbout, $gameDate)
         } 
         line("Correct!");
     }
-        line("Congratulations, {$name}");
+        line("Congratulations, ".$name."!");
 }
