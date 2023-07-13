@@ -38,8 +38,8 @@ function startGame($gameAbout, $gameDate)
             line("'" . $answer . "' is wrong answer ;(. Correct answer was '" . $correctAnswer . "'.");
             line("Let's try again, " . $name . "!");
             return;
-        } 
+        }
         line("Correct!");
     }
-        line("Congratulations, ". $name ."!");
+        line("Congratulations, " . $name . "!");
 }
