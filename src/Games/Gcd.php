@@ -24,10 +24,10 @@ const GAME_ABOUT = 'Find the greatest common divisor of given numbers.';
  * https://www.php.net/manual/ru/function.gmp-gcd.php
  * but I don't use it. :)
  *
- * @param int $a first number
- * @param int $b second numer
+ * @param int|float $a first number
+ * @param int|float $b second numer
  *
- * @return number
+ * @return int|float
  */
 function getGcd($a, $b)
 {
@@ -44,7 +44,6 @@ function getGcd($a, $b)
 /**
  * Is start game
  *
- * @return NULL
  */
 function gcdStart()
 {

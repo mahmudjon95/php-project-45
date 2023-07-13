@@ -45,11 +45,6 @@ function calculate($symbol, $a, $b)
     return $result;
 }
 
-/**
- * Is start game
- *
- * @return NULL
- */
 function calcStart()
 {
     $gameData = [];

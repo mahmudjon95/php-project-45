@@ -30,18 +30,13 @@ function isEven($num)
     return $num % 2 === 0;
 }
 
-/**
- * Is start game
- *
- * @return NULL
- */
 function evenStart()
 {
     $gameData = [];
     for ($i = 0; $i < GAMES_COUNT; $i++) {
         $randNumber = rand(1, 30);
         $correctAnswer = isEven($randNumber) ? 'yes' : 'no';
-        (int) $question = $randNumber;
+        $question = $randNumber;
         $gameData[] = [$question, $correctAnswer];
     }
     startGame(GAME_ABOUT, $gameData);

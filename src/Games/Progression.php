@@ -36,7 +36,6 @@ function randProgression()
 /**
  * Is start game
  *
- * @return NULL
  */
 function progrStart()
 {
