@@ -35,11 +35,11 @@ function startGame($gameAbout, $gameDate)
         line("Question: " . $question);
         $answer = prompt('You answer');
         if ($correctAnswer != $answer) {
-            line("'" .$answer. "' is wrong answer ;(. Correct answer was '" .$correctAnswer. "'.");
-            line("Let's try again, " .$name. "!");
+            line("'" . $answer . "' is wrong answer ;(. Correct answer was '" . $correctAnswer . "'.");
+            line("Let's try again, " . $name . "!");
             return;
         } 
         line("Correct!");
     }
-        line("Congratulations, ".$name."!");
+        line("Congratulations, ". $name ."!");
 }
