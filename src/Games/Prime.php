@@ -47,8 +47,8 @@ function primeStart()
 {
     $gameData = [];
     for ($i = 0; $i < GAMES_COUNT; $i++) {
-        $randNum = rand();
-        $question = $randNum;
+        $randNum = rand(1, 100);
+        (int) $question = $randNum;
         $correctAnswer = (isPrime($randNum)) ? 'yes' : 'no';
         $gameData[] = [$question, $correctAnswer];
     }
