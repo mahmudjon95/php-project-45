@@ -23,7 +23,7 @@ const GAMES_COUNT = 3;
  * @param string $gameAbout is description game
  * @param array  $gameDate  is result game
  *
- * @return empty
+ * @return mixed
  */
 function startGame($gameAbout, $gameDate)
 {
