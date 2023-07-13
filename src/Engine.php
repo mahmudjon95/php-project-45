@@ -17,7 +17,13 @@ use function cli\line;
 use function cli\prompt;
 
 const GAMES_COUNT = 3;
-
+/**
+ * Processes welcome user
+ *
+ * @param string $gameAbout is description game
+ * @param array  $gameDate  is result game
+ *
+ */
 function startGame($gameAbout, $gameDate)
 {
     line('Welcome to the Brain Games!');
