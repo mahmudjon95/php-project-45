@@ -23,7 +23,7 @@ const GAME_ABOUT = 'Answer "yes" if given number is prime. Otherwise answer "no"
  *
  * @param int $num is prime or not prime number
  *
- * @return bolean
+ * @return boolean
  */
 function isPrime($num)
 {
@@ -41,14 +41,13 @@ function isPrime($num)
 /**
  * Is start game
  *
- * @return NULL
  */
 function primeStart()
 {
     $gameData = [];
     for ($i = 0; $i < GAMES_COUNT; $i++) {
         $randNum = rand(1, 100);
-        (int) $question = $randNum;
+        $question = $randNum;
         $correctAnswer = (isPrime($randNum)) ? 'yes' : 'no';
         $gameData[] = [$question, $correctAnswer];
     }
