@@ -31,14 +31,14 @@ function startGame($gameAbout, $gameDate)
     line("Hello, %s!", $name);
     line($gameAbout);
     foreach ($gameDate as [$question, $correctAnswer]) {
-        line("Question: " . $question);
+        line("Question: %s", $question);
         $answer = prompt('You answer');
         if ($correctAnswer != $answer) {
-            line("'" . $answer . "' is wrong answer ;(. Correct answer was '" . $correctAnswer . "'.");
-            line("Let's try again, " . $name . "!");
+            line("'$answer' is wrong answer ;(. Correct answer was '$correctAnswer'.");
+            line("Let's try again, %s!", $name);
             return;
         }
         line("Correct!");
     }
-        line("Congratulations, " . $name . "!");
+        line("Congratulations, %s!", $name);
 }
