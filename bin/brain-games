@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-use function BrainGames\Cli\helloUser;
+use function BrainGames\Cli\welcome;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 
@@ -13,4 +13,4 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-helloUser();
+welcome();
