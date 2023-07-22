@@ -6,9 +6,9 @@
 This is a console project for the game "Brian Games". There are 5 mini games inside the project.
 
 Installation requirements:
-php7+
-composer
-git
+1. PHP 7
+2. Composer 2.5
+3. Git 2.25
 
 Installation instructions:
 1. Clone the repository to yourself.
