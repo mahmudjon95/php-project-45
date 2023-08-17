@@ -18,14 +18,15 @@ use function BrainGames\Engine\startGame;
 use const BrainGames\Engine\GAMES_COUNT;
 
 const GAME_ABOUT = 'What is the result of the expression?';
+
 /**
- * Is even
+ * Function for brain-calc
  *
- * @param string $symbol is * or + or -
- * @param int    $a      first number
- * @param int    $b      second numer
- *
- * @return string
+ * @param mixed $symbol mathematical operation
+ * @param mixed $a      first number
+ * @param mixed $b      second number
+ * 
+ * @return void
  */
 function calculate($symbol, $a, $b)
 {
@@ -45,6 +46,11 @@ function calculate($symbol, $a, $b)
     return $result;
 }
 
+/**
+ * Funtion for brain-calc
+ *
+ * @return void
+ */
 function calcStart()
 {
     $gameData = [];

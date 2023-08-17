@@ -30,6 +30,11 @@ function isEven($num)
     return $num % 2 === 0;
 }
 
+/**
+ * Function for brain-even
+ *
+ * @return void
+ */
 function evenStart()
 {
     $gameData = [];

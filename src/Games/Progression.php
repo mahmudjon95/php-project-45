@@ -18,10 +18,11 @@ use function BrainGames\Engine\startGame;
 use const BrainGames\Engine\GAMES_COUNT;
 
 const GAME_ABOUT = 'What number is missing in the progression?';
+
 /**
- * Is even
+ * Function for generate random number
  *
- * @return array
+ * @return void
  */
 function randProgression()
 {
@@ -33,9 +34,11 @@ function randProgression()
     return $progression;
 }
 
+
 /**
- * Is start game
+ * Function for brain-progression
  *
+ * @return void
  */
 function progrStart()
 {

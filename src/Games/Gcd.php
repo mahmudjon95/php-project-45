@@ -42,8 +42,9 @@ function getGcd($a, $b)
 }
 
 /**
- * Is start game
+ * Function for brain-gcd
  *
+ * @return void
  */
 function gcdStart()
 {

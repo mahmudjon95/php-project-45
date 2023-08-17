@@ -17,12 +17,14 @@ use function cli\line;
 use function cli\prompt;
 
 const GAMES_COUNT = 3;
+
 /**
- * Processes welcome user
+ * Core function for all games
  *
- * @param string $gameAbout is description game
- * @param array  $gameDate  is result game
- *
+ * @param mixed $gameAbout is game description
+ * @param mixed $gameDate  is all data on game
+ * 
+ * @return void
  */
 function startGame($gameAbout, $gameDate)
 {

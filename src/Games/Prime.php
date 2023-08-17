@@ -18,12 +18,13 @@ use function BrainGames\Engine\startGame;
 use const BrainGames\Engine\GAMES_COUNT;
 
 const GAME_ABOUT = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 /**
- * Is even
+ * Function for definitions prime
  *
- * @param int $num is prime or not prime number
- *
- * @return boolean
+ * @param mixed $num is number
+ * 
+ * @return void
  */
 function isPrime($num)
 {
@@ -39,8 +40,9 @@ function isPrime($num)
 }
 
 /**
- * Is start game
+ * Function for brain-prime
  *
+ * @return void
  */
 function primeStart()
 {
