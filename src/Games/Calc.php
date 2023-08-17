@@ -60,7 +60,7 @@ function calcStart()
         $firstRandNum = rand(1, 30);
         $secondRandNum = rand(1, 30);
         $correctAnswer = calculate($randSymb, $firstRandNum, $secondRandNum);
-        $question = $firstRandNum . " {$randSymb} " . $secondRandNum;
+        $question = "$firstRandNum $randSymb $secondRandNum";
         $gameData[] = [$question, $correctAnswer];
     }
     startGame(GAME_ABOUT, $gameData);

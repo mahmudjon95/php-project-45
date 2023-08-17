@@ -53,7 +53,7 @@ function gcdStart()
         $firstRandNum = rand(1, 100);
         $secondRandNum = rand(1, 100);
         $correctAnswer = getGcd($firstRandNum, $secondRandNum);
-        $question = $firstRandNum . " " . $secondRandNum;
+        $question = "$firstRandNum $secondRandNum";
         $gameData[] = [$question, $correctAnswer];
     }
     startGame(GAME_ABOUT, $gameData);
