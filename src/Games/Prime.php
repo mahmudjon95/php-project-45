@@ -50,7 +50,7 @@ function primeStart()
     for ($i = 0; $i < GAMES_COUNT; $i++) {
         $randNum = rand(1, 100);
         $question = $randNum;
-        $correctAnswer = (isPrime($randNum)) ? 'yes' : 'no';
+        $correctAnswer = isPrime($randNum) ? 'yes' : 'no';
         $gameData[] = [$question, $correctAnswer];
     }
     startGame(GAME_ABOUT, $gameData);
