@@ -14,6 +14,7 @@
 namespace BrainGames\Games\Calc;
 
 use function BrainGames\Engine\startGame;
+use function cli\line;
 
 use const BrainGames\Engine\GAMES_COUNT;
 
@@ -30,20 +31,21 @@ const GAME_ABOUT = 'What is the result of the expression?';
  */
 function calculate($symbol, $a, $b)
 {
-    switch ($symbol) {
-        case "*":
-            $result = $a * $b;
-            break;
-        case "+":
-            $result = $a + $b;
-            break;
-        case "-":
-            $result = $a - $b;
-            break;
-        default:
-            $result = false;
-    }
-    return $result;
+        switch ($symbol) {
+            case "*":
+                $result = $a * $b;
+                break;
+            case "+":
+                $result = $a + $b;
+                break;
+            case "-":
+                $result = $a - $b;
+                break;  
+            default:    
+                throw new \Exception("Error in function! Check calculate and calcStart.");
+        }
+    
+        return $result;
 }
 
 /**
@@ -53,15 +55,19 @@ function calculate($symbol, $a, $b)
  */
 function calcStart()
 {
-    $gameData = [];
-    for ($i = 0; $i < GAMES_COUNT; $i++) {
-        $matemSymbols = ["*", "+", "-"];
-        $randSymb = $matemSymbols[array_rand($matemSymbols, 1)];
-        $firstRandNum = rand(1, 30);
-        $secondRandNum = rand(1, 30);
-        $correctAnswer = calculate($randSymb, $firstRandNum, $secondRandNum);
-        $question = "$firstRandNum $randSymb $secondRandNum";
-        $gameData[] = [$question, $correctAnswer];
+    try {
+        $gameData = [];
+        for ($i = 0; $i < GAMES_COUNT; $i++) {
+            $matemSymbols = ["*", "+", "-"];
+            $randSymb = $matemSymbols[array_rand($matemSymbols, 1)];
+            $firstRandNum = rand(1, 30);
+            $secondRandNum = rand(1, 30);
+            $correctAnswer = calculate($randSymb, $firstRandNum, $secondRandNum);
+            $question = "$firstRandNum $randSymb $secondRandNum";
+            $gameData[] = [$question, $correctAnswer];
+        }
+        startGame(GAME_ABOUT, $gameData);
+    } catch (\Exception $e) {
+        line($e->getMessage());
     }
-    startGame(GAME_ABOUT, $gameData);
 }
